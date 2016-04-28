@@ -1,0 +1,135 @@
+body
+{
+  background-repeat: repeat-x repeat-y;
+  background-color: #404040;
+  background-image: url(../images/shutter.png);
+  font-family: Abel, Eurostile, "Lucida Sans", sans-serif;
+  margin: 0px; 
+  padding: 0px;
+}
+
+#wrapper
+{
+  background-color: #403c3b;
+  margin: 0px auto 0px auto;
+  position: relative;
+  text-align: center;
+}
+
+h1
+{
+  background-image: url(../images/camera-logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  text-indent: -1000%;
+  height: 75px;
+  line-height: 75px;
+  width: 117px;
+  margin: 0px auto 0px auto;
+  padding: 30px 10px 20px 10px;
+}
+
+h2
+{
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  display: inline-block;
+  margin: 0px 0px 23px 0px;
+}
+
+ul
+{
+  border:none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li
+{
+  background-color: #505050;
+  color: #fff;
+  border-top: 1px solid #505050;
+  border-bottom: 1px solid #505050;
+  font-size: 24px;
+  letter-spacing: .05em;
+  list-style-type: none;
+  text-shadow: 2px 2px 1px #9f593f;
+  text-align: left;
+  height: 50px;
+  padding-left: 1em;
+  padding-top: 10px;
+}
+
+li:nth-child(even) {background-color: #7a7a7a;}  
+  
+li.selected {background-color: #507029; }
+
+/* FORM STYLES */
+
+input[type='submit'], a.add, button, a.show {
+  background-color: #26a50d;
+  color: #f3dad1;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 10px;
+  font-family: Abel, Eurostile, "Lucida Sans", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;}
+
+
+/* Small screen:mobile */
+@media only screen and (max-width: 500px)
+{
+  body
+  {
+      background-color: #403c3b;
+  }
+  #wrapper
+  {
+    max-width: 480px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px)
+{
+  #wrapper
+  {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px)
+{
+  #wrapper
+  {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+
+/* Larger screens */
+@media only screen and (min-width: 960px)
+{
+  #wrapper
+  {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+{ 
+  h1
+  {
+    background-image: url(../images/2xkinglogo.png);
+    background-size: 72px 72px;
+  }
+}
